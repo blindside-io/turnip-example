@@ -1,24 +1,19 @@
-# README
+# Turnip Example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Based on the blog post [found here](https://medium.com/@bobbytables/acceptance-testing-with-turnip-and-rails-dbd7d65398f2).
 
-Things you may want to cover:
+Checkout the `spec` directory to see how this project has setup turnip.
 
-* Ruby version
+Running `rspec` will yield the output:
 
-* System dependencies
+```
+➜  turnip-example git:(master) ✗ rspec --format=doc
 
-* Configuration
+Creating An Account
 
-* Database creation
+    Given I visit the page "/users/sign_up" -> When I fill in the form with: -> And I click the "Sign up" button -> Then I have created an account
 
-* Database initialization
+Finished in 0.26504 seconds (files took 1.95 seconds to load)
+1 example, 0 failures
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
